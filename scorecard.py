@@ -65,7 +65,7 @@ def TransferWOE(df_train,df,df2,special_attribute = []):
         df2[col2] = WOE['WOE']
     return df2
 	
-	def CalculateIV(df,special_attribute = []):
+def CalculateIV(df,special_attribute = []):
     for col in allFeatures3:
         if col in numerical_var:
             special_attribute = [-1]
